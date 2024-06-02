@@ -1,0 +1,30 @@
+INPUT:
+% Facts
+
+1. Ram likes mango.
+2. Seema is a girl.
+3. Bill likes Cindy.
+4. Rose is red.
+5. John owns gold.
+
+% Clauses
+
+ likes(ram ,mango).
+ girl(seema).
+ red(rose).
+ likes(bill ,cindy).
+ owns(john ,gold).
+
+OUTPUT:
+% Queries
+
+ ?-likes(ram,What).
+ What= mango
+ ?-likes(Who,cindy).
+ Who= cindy
+
+ ?-red(What).
+ What= rose
+ ?-owns(Who,What).
+ Who= john
+ What= gold
