@@ -1,0 +1,25 @@
+SOLUTION:
+% Production rules:
+
+c_to_f
+f is c * 9 / 5 + 32
+freezing f < = 32
+
+% Rules:
+
+c_to_f(C,F) :-
+	F is C * 9 / 5 + 32.
+
+freezing(F) :-
+	F =< 32.
+
+OUTPUT:
+% Queries :
+
+?- c_to_f(100,X).
+X = 212
+Yes
+?- freezing(15).
+Yes
+?- freezing(45).
+No
