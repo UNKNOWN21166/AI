@@ -1,0 +1,12 @@
+txt = input("Enter the sentence :")
+words = txt.split()
+w_c = {}
+for i in words:
+    word = i.lower()
+    if word in w_c:
+        w_c[word]+=1
+    else:
+        w_c[word]=1
+print("Word Analysis:")
+for word,count in w_c.items():
+    print(f"{word} : {count} times")
